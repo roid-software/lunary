@@ -29,7 +29,9 @@ export function SettingsCard({
               overflow: "hidden",
             }}
           >
-            <Paywall {...paywallConfig}>{children}</Paywall>
+              {children}
+            {/* <Paywall {...paywallConfig}>
+              </Paywall> */}
           </Stack>
         </Stack>
       </Card>

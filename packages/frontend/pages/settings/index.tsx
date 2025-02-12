@@ -167,9 +167,7 @@ function SmartDataRule() {
     }
   }, [filteringRule]);
 
-  const smartDataFilterEnabled = config.IS_SELF_HOSTED
-    ? org.license.dataFilteringEnabled
-    : org.dataFilteringEnabled;
+  const smartDataFilterEnabled = true
 
   return (
     <SettingsCard
@@ -355,7 +353,7 @@ export default function Settings() {
             enabled: true,
           }}
         >
-          <Button>Open Guardrails settings</Button>
+          <Button onClick={(e) => router.push("/guardrails")}>Open Guardrails settings</Button>
         </SettingsCard>
         <DataWarehouseCard />
         {user && hasAccess(user.role, "projects", "delete") && (

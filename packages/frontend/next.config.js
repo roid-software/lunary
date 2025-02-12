@@ -49,6 +49,14 @@ const nextConfig = {
         destination: "https://app.posthog.com/:path*",
       },
       {
+        source: "/auth/google",
+        destination: process.env.API_URL + "/auth/google",
+      },
+      {
+        source: "/v1/:path*",
+        destination: process.env.API_URL + "/v1/:path*",
+      },
+      {
         source: "/api/v1/report",
         destination: process.env.API_URL + "/api/report",
       },
