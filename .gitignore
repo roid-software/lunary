@@ -185,8 +185,8 @@ dist
 
 bun.lockb
 
-*.Dockerfile
-docker-compose*
+# *.Dockerfile
+# docker-compose*
 
 
 entrypoint.sh

@@ -4,6 +4,7 @@
   "scripts": {
     "start": "bun --filter './packages/frontend' --filter './packages/backend' start",
     "start:backend": "bun --filter './packages/backend' start",
+    "start:backend:run": "bun --filter './packages/backend' start:run",
     "start:frontend": "bun --filter './packages/frontend' start",
     "build:frontend": "bun --filter './packages/frontend' build",
     "migrate:db": "bun --filter './packages/backend' migrate:db",
