@@ -3,6 +3,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "bun run migrate:db && bun run src/index.ts",
+    "start:run": "bun run src/index.ts",
     "start:realtime-evaluators": "bun run src/realtime-evaluators.ts",
     "dev:realtime-evaluators": "bun run --watch src/realtime-evaluators.ts",
     "migrate:db": "bun run src/migrate.ts",
